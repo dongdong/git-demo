@@ -25,3 +25,11 @@
         - git checkout [branch-name]
         - git checkout -b [branch-name]
         - git branch [branch-name] [commit]
+        - git checkout -
+    * remote branch
+        - git branch -r
+        - git branch --track [branch] [remote-branch]
+        - git branch --set-upstream [branch] [remote-branch]
+    * merge
+        - git merge [branch]
+        - git merge --no-ff [branch]
