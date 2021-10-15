@@ -96,7 +96,17 @@
             - git checkout dev
             - git merge --no-ff feature-x
             - git branch -d feature-x
-        3.2. 预发布release分支
+        3.2. 预发布release分支, 发布正式版本前（合并到Master前），可能需要一个预发布版本进行测试；branch以release-*形式命名
+            - git checkout -b release-* dev
+            - git checkout master
+            - git merge --no-ff release-*
+            - git tag -a v*
+            - git checkout develop
+            - git merge --no-ff release-*
+            - git branch -d release-*
         3.3. 修补bugfix分支
+
+
+
 
 
