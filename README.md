@@ -10,6 +10,8 @@
         - git reflog
     * basic operation:   
         - git init
+        - git add [file1] [file2] ...
+        - git add .
         - git rm [file1] [file2] ...
         - git rm --cached [file]
         - git mv [file-original] [file-renamed]
@@ -26,10 +28,28 @@
         - git checkout -b [branch-name]
         - git branch [branch-name] [commit]
         - git checkout -
+        - git branch -d [branch-name]
     * remote branch
         - git branch -r
         - git branch --track [branch] [remote-branch]
         - git branch --set-upstream [branch] [remote-branch]
+        - git branch -dr [remote-branch]
     * branch merge
         - git merge [branch]
         - git merge --no-ff [branch]
+        - git cherry-pick [commit]
+
+
+##### tag cmds
+    * tag cmds
+        - git tag
+        - git tag [tag-name]
+        - git tag [tag-name] [commit]
+        - git tag -d [tag]
+
+
+
+
+
+
+
