@@ -108,6 +108,14 @@
             - git merge --no-ff release-*
             - git branch -d release-*
         3.3. 修补bugfix分支
+            - git checkout -b fixbug-x master
+            - [fix bug on fixbug-x branch]
+            - git checkout master
+            - git merge --no-ff fixbug-x
+            - git tag -a vx
+            - git checkout dev
+            - git merge --no-ff fixbug-x
+            - git branch -d fixbug-x
 
 
 
