@@ -72,4 +72,17 @@
         - git log --graph --pretty=oneline --abbrev-commit
 
 
+##### redo & rollback
+    * checkout
+        - git checkout [file]
+        - git checkout [commit] [file]
+        - git checkout .
+    * reset
+        - git reset [file]
+        - git reset --hard [commit]
+        - git reset --keep [commit]
+    * revert
+        - git revert [commit]
+
+
 
