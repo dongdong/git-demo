@@ -88,6 +88,8 @@
 ##### 分支管理策略
     1. 主分支，代码只有一个主分支，所以正式版都在主分支上发布
     2. 开发分支develop，主分支只用来发布重大版本，日常开发在develop分支；发布时，在master分支上对develop分支进行合并
+        - git checkout master
+        - git merge --no-ff dev
     3. 临时分支
         3.1. 功能feature分支
         3.2. 预发布release分支
