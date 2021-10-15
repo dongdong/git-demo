@@ -8,6 +8,7 @@
         - git config -e
         - git log
         - git reflog
+        - git log --graph --pretty=oneline --abbrev-commit
     * basic operation:   
         - git init
         - git add [file1] [file2] ...
