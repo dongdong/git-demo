@@ -88,15 +88,28 @@
 ##### 分支管理策略
     1. 主分支，代码只有一个主分支，所以正式版都在主分支上发布
     2. 开发分支develop，主分支只用来发布重大版本，日常开发在develop分支；发布时，在master分支上对develop分支进行合并
+        - [edit on develop branch]
         - git checkout master
         - git merge --no-ff dev
     3. 临时分支
         3.1. 功能feature分支,功能分支的名字可以采用feature_x，使用完后应删除
             - git checkout -b feature-x dev
+            - [edit on feature-x branch]
             - git checkout dev
             - git merge --no-ff feature-x
             - git branch -d feature-x
-        3.2. 预发布release分支
+        3.2. 预发布release分支, 发布正式版本前（合并到Master前），可能需要一个预发布版本进行测试；branch以release-*形式命名
+            - git checkout -b release-* dev
+            - [edit on release-* branch]
+            - git checkout master
+            - git merge --no-ff release-*
+            - git tag -a v*
+            - git checkout develop
+            - git merge --no-ff release-*
+            - git branch -d release-*
         3.3. 修补bugfix分支
+
+
+
 
 
