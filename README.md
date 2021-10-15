@@ -91,7 +91,11 @@
         - git checkout master
         - git merge --no-ff dev
     3. 临时分支
-        3.1. 功能feature分支
+        3.1. 功能feature分支,功能分支的名字可以采用feature_x，使用完后应删除
+            - git checkout -b feature-x dev
+            - git checkout dev
+            - git merge --no-ff feature-x
+            - git branch -d feature-x
         3.2. 预发布release分支
         3.3. 修补bugfix分支
 
