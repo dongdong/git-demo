@@ -8,7 +8,6 @@
         - git config -e
         - git log
         - git reflog
-        - git log --graph --pretty=oneline --abbrev-commit
     * basic operation:   
         - git init
         - git add [file1] [file2] ...
@@ -49,8 +48,28 @@
         - git tag -d [tag]
 
 
+##### remote repository
+    * remote cmds
+        - git fetch [remote]
+        - git remote -v
+        - git remote show [remote]
+        - git remote add [shortname] [url]
+        - git pull [remote] [branch]
+        - git push [remote] [branch]
 
 
+##### more information
+    * git show
+        - git show [tag]
+        - git show [commit]
+        - git show --name-only [commit]
+        - git show [commit]:[file]
+    * git diff
+        - git diff
+        - git diff HEAD
+        - git diff --cached [file]
+    * git log
+        - git log --graph --pretty=oneline --abbrev-commit
 
 
 
